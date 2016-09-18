@@ -3,6 +3,7 @@
 <head>
 	<title>MyBio</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
@@ -14,15 +15,32 @@
 	 	<nav role="navigation">
 	 		<ul>
 	 			<li><a href="index.html">About</a></li>
-	 			<li><a href="pages/portfolio.html">Portfolio</a></li>
-	 			<li><a href="pages/contact.html">Contact</a></li>
+	 			<li><a href="portfolio.html">Portfolio</a></li>
+	 			<li><a href="contact.html">Contact</a></li>
 	 		</ul>
 	 	</nav>
-
-	 	
 	 	</div>
 	 </header>
 
+	 <main role="contact_form">
+	 	<form>
+	 		<form action="send-email.php" method="post">
+	 			Name: <input type="text" name="firstname lastname" size="25" maxlength="40">
+			<br><br>
+
+	 			E-mail: <input type="text" name="email address" size="30" maxlength="50">
+	 		<br><br>
+
+	 			Message: 
+	 			<br>
+	 			<textarea name="message" rows="8" cols="30"></textarea>
+	 			<br><br>
+
+	 			<input type="submit" name="Submit">
+
+
+	 	</form>
+	 </main>
 
 
 	 <aside role="iconlinks">
